@@ -5,5 +5,8 @@ def factorial(n):
     elif n == 1:
         return 1
     else:
-        return n*factorial(n-1)
-    
+       try:
+            n = int(n)
+            return n*factorial(n-1)
+        except:
+            print('implementation of factorial works with integers only\n');
